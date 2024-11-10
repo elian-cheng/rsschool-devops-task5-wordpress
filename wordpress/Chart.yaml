@@ -1,0 +1,10 @@
+# https://helm.sh/docs/topics/charts/#the-chartyaml-file
+apiVersion: v2
+name: elian-wordpress
+description: A Helm chart for deploying WordPress with PostgreSQL
+version: 0.1.0
+appVersion: "0.1.0"
+maintainers:
+  - name: Olga Chernega
+    email: eliang.cheng@gmail.com
+    url: https://github.com/elian-cheng
