@@ -17,19 +17,12 @@ wordpress:
   persistentVolume:
     size: 5Gi
 
-postgresql:
+mysql:
   enabled: true
-  image: "postgres:13"
-  postgresPassword: "postgres"
+  image: "mysql:5.7"
+  rootPassword: "root_password"
   database: "wp_db"
   user: "wp_user"
   password: "wp_password"
-  resources:
-    requests:
-      memory: "512Mi"
-      cpu: "250m"
-    limits:
-      memory: "1Gi"
-      cpu: "500m"
   persistentVolume:
     size: 5Gi
